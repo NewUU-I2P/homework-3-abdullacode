@@ -1,9 +1,13 @@
 #include <string>
 #include <sstream>
+using namespace std;
 
-std::string problemSolution4(const std::string &macAddress) {
-    // write your code here
+string problemSolution4(const string &macAddress) {
 
-    // make use of control flow statements
-    // return result;
+    if (macAddress[1]=='F')
+        return "Broadcast";
+    else if (macAddress[1]%2==0)
+        return "Unicast";
+    else
+        return "Multicast";
 }
