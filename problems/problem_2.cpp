@@ -3,7 +3,7 @@ float problemSolution2(float i, float j, float k) {
     float result;
     if (i>j && i>k)
         result=i;
-    if (j>i && j>k)
+    else if (j>i && j>k)
         result=j;
     else
         result=k;
